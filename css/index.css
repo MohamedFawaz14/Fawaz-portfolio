@@ -5,6 +5,11 @@
  font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    
+  transition: .3s;
+}
+
 .nav-link:hover{
   color: #6dd431;
 }
@@ -91,7 +96,8 @@ body
 
  .imge
  {
-    width: 105px;
+    width: 80px;
+    height: 80px;
  }
 
 
@@ -107,3 +113,5 @@ body
 {
   cursor: pointer;
 }
+
+       
