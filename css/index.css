@@ -267,12 +267,12 @@ body
   }
 }
   
-  @media (max-width: 320px) {
+  @media (max-width: 360px) {
     .height-img{
   
   
       max-height:280px;
-      max-width:280px;
+      max-width:300px;
      
     }
     
