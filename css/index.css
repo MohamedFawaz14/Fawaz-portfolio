@@ -223,8 +223,57 @@ body
 
 /*================ Start Certificate Section =================*/
 
+.height-img{
 
 
+  max-height:480px;
+  max-width:900px;
+  margin: auto;
+}
+
+
+@media (max-width: 800px) {
+  .height-img{
+
+
+    max-height:280px;
+    max-width:400px;
+    margin: auto;
+  }
+  
+}
+
+@media (max-width: 575px) {
+  .height-img{
+
+
+    max-height:280px;
+    max-width:400px;
+    margin: auto;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .height-img{
+
+
+    max-height:280px;
+    max-width:400px;
+    margin: auto;
+  }
+}
+  
+  @media (max-width: 320px) {
+    .height-img{
+  
+  
+      max-height:280px;
+      max-width:280px;
+     
+    }
+    
+}
 /*================End Certificate Section =================*/
 
 
@@ -374,6 +423,7 @@ body
   color: #fff;
   background-clip: text;
   text-fill-color: transparent;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
