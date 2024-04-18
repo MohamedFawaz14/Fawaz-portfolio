@@ -155,11 +155,6 @@ body
   }
 
 
- .imge
- {
-    width: 100px;
-    height: 100px;
- }
 
 
 .instragram-logo
@@ -177,6 +172,25 @@ body
 
 
 /*================About US Area =================*/
+.about-underline
+{
+  position: relative;
+}
+
+.about-underline::after
+{
+  content:"";
+  width: 15%;
+  height: 3px;
+  background-color: rgb(4, 12, 1);
+  position: absolute;
+  right:85%;
+  top: 36px;
+  border-radius: 2px;
+}
+
+
+
 .about-img
 {
   width:450px;
@@ -201,27 +215,52 @@ body
   background-color: #2c2d31;
 }
 
-.animate-about-img
-{
-  animation: movedown .3s linear;
-  animation-delay: .4s;
-   
-}
 
-.animate-about
-{
-  animation: movedown .3s linear;
-  animation-delay: .6s;
-   
-}
 .lightwhite{
   background-color: #ffffff;
 }
 
+
 /*================End About us =================*/
 
 
+/*================Skills =================*/
+
+.skills
+{
+ 
+  font-size: 40px;
+  
+}
+
+
+.skills-images
+{
+  margin-top: 30px;
+  margin-bottom: 20px;;
+  width: 200px;
+  height : 150px;
+  
+}
+
+.skills-border
+{
+  border-width: thin;
+border-color: #e7e7e7;
+border-style: solid;
+background: #fffefe;
+
+box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+
+
+}
+
+/*================End of Skills Section =================*/
+
+
 /*================ Start Certificate Section =================*/
+
+
 
 .height-img{
 
@@ -280,39 +319,7 @@ body
 /*================End Certificate Section =================*/
 
 
-/* Start Features Area css
-============================================================================================ */
 
-.feature_item {
- 
-  text-align: center;
-  cursor: pointer;
-  margin-bottom: 30px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s; 
-  border: thin solid rgb(233, 233, 233);
-}
-  
-  .feature_item h5 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase; 
-  }
-
-  .feature_item:hover {
-    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
-    background: #fff; }
-
-.animate-skills
-{
-  animation: movedown .3s linear;
-  animation-delay: .8s;
-}
-
-/* End Features Area css
-============================================================================================ */
 
 
 
@@ -447,4 +454,28 @@ body
 
 
 
+/* Scroll Animation
+============================================================================================ */
+/*---------------------------------------------------- */
 
+  .box 
+{
+  transform: translateX(400%);
+  transition: transform 0.8s ease;
+}
+
+.box:nth-of-type(even)
+{
+  transform: translateX(-400%);
+}
+
+.box.show{
+  transform : translate(0);
+}
+
+
+
+
+/* End of Scroll Animation
+============================================================================================ */
+/*---------------------------------------------------- */
