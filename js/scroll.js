@@ -1,20 +1,21 @@
-const Boxes = document.querySelectorAll('.box');
-window.addEventListener('scroll',checkboxes)
-checkboxes()
 
-function checkboxes()
+
+const observer = new IntersectionObserver((entries) =>
 {
-    const triggerBottom = window.innerHeight / 5*4;
+ entries.forEach((entry) =>
+{
+    if(entry.isIntersecting)
+    {
+        entry.target.classList.add('show');
 
-    Boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top;
-        if (boxTop < triggerBottom)
-        {
-            box.classList.add('show')
-        }
-        else{
-            box.classList.remove('show')
-        }
-    })
-}
+    }
+    else 
+    {
+        entry.target.classList.remove('show');
+    }
+});
 
+});
+
+const Boxes = document.querySelectorAll('.box');
+Boxes.forEach((el)=> observer.observe(el));
