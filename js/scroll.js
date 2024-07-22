@@ -1,21 +1,21 @@
 
 
-const observer = new IntersectionObserver((entries) =>
-{
- entries.forEach((entry) =>
-{
-    if(entry.isIntersecting)
-    {
-        entry.target.classList.add('show');
+// const observer = new IntersectionObserver((entries) =>
+// {
+//  entries.forEach((entry) =>
+// {
+//     if(entry.isIntersecting)
+//     {
+//         entry.target.classList.add('show');
 
-    }
-    else 
-    {
-        entry.target.classList.remove('show');
-    }
-});
+//     }
+//     else 
+//     {
+//         entry.target.classList.remove('show');
+//     }
+// });
 
-});
+// });
 
-const Boxes = document.querySelectorAll('.box');
-Boxes.forEach((el)=> observer.observe(el));
+// const Boxes = document.querySelectorAll('.box');
+// Boxes.forEach((el)=> observer.observe(el));

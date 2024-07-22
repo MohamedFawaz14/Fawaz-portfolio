@@ -255,6 +255,13 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
 
 }
 
+.skills-border:hover
+{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+
 /*================End of Skills Section =================*/
 
 
@@ -318,22 +325,41 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
 }
 /*================End Certificate Section =================*/
 
+/*================projection Section =================*/
+.project-border
+{
+  border-width: thin;
+border-color: #e7e7e7;
+border-style: solid;
+background: #fffefe;
+
+box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+
+
+}
+
+.project-border:hover
+{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.project-link
+{
+  text-decoration: none;
+  
+}
+/*================End of projection Section =================*/
 
 
 
-
-
-  /* Footer Area css
-  ============================================================================================ */
+  /* ===========================Footer Area css======================== */
   .footer_area {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
     background-image: none !important;
     background-color: #fcf8ff; }
 
-
-     /* Footer Area css
-  ============================================================================================ */
   .footer_area .col-sm-6 {
     margin-bottom: 30px; }
 
@@ -458,7 +484,7 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
 ============================================================================================ */
 /*---------------------------------------------------- */
 
-  .box 
+  /* .box 
 {
    opacity: 0;
    filter: blur(2px);
@@ -476,6 +502,26 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
 .delay 
 {
   transition-delay: 30ms;
+} */
+
+@keyframes appear {
+  from
+  {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to 
+  {
+    opacity: 1;
+    scale:1;
+  }
+}
+
+.box{
+  animation: appear linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 30%;
 }
 
 /* End of Scroll Animation
