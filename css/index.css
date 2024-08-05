@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *
 {
   scroll-behavior: smooth;
@@ -6,8 +10,8 @@
 
 body{
   background-color: #fafafa;
+  
 }
-
 
 
 /*Start NavBar Section css
@@ -149,7 +153,7 @@ body
     margin-top: 40px;
     padding-top: 25px;
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 500;
    
   }
@@ -261,6 +265,20 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
   transform: scale(1.1);
 }
 
+.skills-style
+{
+  font-family: "Carter One", system-ui;
+  font-weight: 800;
+ text-shadow: 9px 9px 2px rgb(211, 211, 211);
+ -webkit-text-stroke-width: 4px; 
+ color: rgb(0, 0, 0);
+ -webkit-text-stroke-color: rgb(255, 255, 255);
+ font-weight: 400;
+ font-size: 100px;
+ margin-top: 50px;
+ margin-bottom: 50px;
+
+}
 
 /*================End of Skills Section =================*/
 
@@ -323,9 +341,22 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
     }
     
 }
+
+.certificate-style
+{
+  font-family: "Carter One", system-ui;
+  font-weight: 800;
+  text-shadow: 9px 9px  rgb(211, 211, 211);
+ -webkit-text-stroke-width: 4px; 
+ -webkit-text-stroke-color: rgb(255, 255, 255);
+ -webkit-text-stroke-width: 2px; 
+ 
+}
+
+
 /*================End Certificate Section =================*/
 
-/*================projection Section =================*/
+/*================project Section =================*/
 .project-border
 {
   border-width: thin;
@@ -349,7 +380,19 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
   text-decoration: none;
   
 }
-/*================End of projection Section =================*/
+
+
+.project-style
+{
+  font-family: "Carter One", system-ui;
+  font-weight: 800;
+  text-shadow: 9px 9px  rgb(211, 211, 211);
+  font-size: 50px;
+ -webkit-text-stroke-color: rgb(255, 255, 255);
+ -webkit-text-stroke-width: 1px;  
+
+}
+/*================End of project Section =================*/
 
 
 
@@ -484,25 +527,6 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
 ============================================================================================ */
 /*---------------------------------------------------- */
 
-  /* .box 
-{
-   opacity: 0;
-   filter: blur(2px);
-   transform: translateX(-100%);
-   transition:  all .4s;
-}
-
-.show
-{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-.delay 
-{
-  transition-delay: 30ms;
-} */
 
 @keyframes appear {
   from
