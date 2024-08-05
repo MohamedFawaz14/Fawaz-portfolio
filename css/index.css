@@ -153,7 +153,7 @@ body
     margin-top: 40px;
     padding-top: 25px;
     margin-bottom: 40px;
-    font-size: 55px;
+    font-size: 52px;
     font-weight: 500;
    
   }
@@ -389,7 +389,7 @@ box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
   text-shadow: 9px 9px  rgb(211, 211, 211);
   font-size: 50px;
  -webkit-text-stroke-color: rgb(255, 255, 255);
- -webkit-text-stroke-width: 1px;  
+ -webkit-text-stroke-width: 2px;  
 
 }
 /*================End of project Section =================*/
